@@ -1,0 +1,20 @@
+def sumArray(numbers):
+  total =0
+  for i in numbers:
+    total += i
+  return total
+
+
+def main():
+  SIZE = 5
+  numbers=[]
+  print(f"Enter {SIZE} numbers: ")
+
+  for i in range(SIZE):
+    n = int(input())
+    numbers.append(n)
+
+  ans = sumArray(numbers)
+  print("Sum of the elements : ",ans)
+
+main()
