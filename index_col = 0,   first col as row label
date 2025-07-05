@@ -1,0 +1,9 @@
+# Import pandas as pd
+import pandas as pd
+
+# Fix import by including index_col
+cars = pd.read_csv('cars.csv',index_col=0)
+#index col 0 , then assume first column as row label
+
+# Print out cars
+print(cars)
