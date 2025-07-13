@@ -1,0 +1,11 @@
+# Import numpy and set seed
+import numpy as np
+np.random.seed(123)
+
+# Use randint() to simulate a dice
+I = np.random.randint(1,7)
+print(I)
+
+# Use randint() again
+I2 = np.random.randint(1,7)
+print(I2)
