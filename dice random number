@@ -1,0 +1,12 @@
+import numpy as np
+np.random.seed(123)
+
+outcomes = []
+
+for x in range(10):
+    c = np.random.randint(0,2)
+    if c==0:
+        outcomes.append("Heads")
+    else:
+        outcomes.append("Tails")
+print(outcomes)
