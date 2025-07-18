@@ -1,0 +1,9 @@
+# Import the required module
+from skimage import exposure
+
+# Show original x-ray image and its histogram
+show_image(chest_xray_image, 'Original x-ray')
+
+plt.title('Histogram of image')
+plt.hist(chest_xray_image.ravel(), bins=256)
+plt.show()
