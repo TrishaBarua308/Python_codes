@@ -1,0 +1,13 @@
+#range
+a = range(10)
+print(a)
+b = list(range(10))
+print(b)
+c = tuple(range(10))
+print(c)
+d = list(range(1,10,2))  # start, end, difference
+print(d)
+e = list(range(100, 2, -2))
+print(e)
+f = list(range(100,0,-2))
+print(f)
