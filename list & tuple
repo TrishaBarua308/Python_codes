@@ -1,0 +1,21 @@
+'''a=[1,2,3,'trisha','mitu',2.3] # list mutuable, that means changeable 
+a.reverse()
+print(a)
+a.reverse()
+a[0] = 'CSE'
+print(a)
+
+s = 'TRISHA'
+print(list(s)) # string to list
+a.append(5.5)
+print(a)
+print(a.index('trisha'))
+a.insert(4,'barua') # index, then which value want to insert
+print(a)'''
+
+#tuple
+t = (1,2,3,'trisha') # immutable, cannot change it after creating
+print(t)
+#t[0]=5.6 # error
+t_rev = tuple(reversed(t))
+print(t_rev)
