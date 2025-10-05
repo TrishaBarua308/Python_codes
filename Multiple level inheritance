@@ -1,0 +1,32 @@
+#Multiple
+print("\n\nMultiple:\n")
+
+class Grandfather:
+    def __init__(self,color, first_name):
+        self.color = color
+        self.first_name = first_name
+
+    def gf_fun(self):
+        print("I am from grandfather\n")
+
+
+class Father:
+    def __init__(self,hobby):
+        self.hobby = hobby
+
+    def fat_fun(self):
+        print("I am from father\n")
+
+
+class Children(Father, Grandfather):
+    def __init__(self,fashion,hobby, color, first_name):
+        Father.__init__(self,hobby)
+        Grandfather.__init__(self,color, first_name)
+        self.fashion = fashion
+
+
+
+c = Children('Styling', 'Cricket',"White",'Trisha')
+print(f"{c.first_name}, {c.color}, {c.hobby}, {c.fashion}")
+c.gf_fun()
+c.fat_fun()
