@@ -1,0 +1,21 @@
+# method overriding
+
+class Dean:
+    def university(self):
+        print("Dean")
+
+class Lecturer(Dean):
+    def university(self):
+        print("Lecturer")
+
+class Student(Lecturer):
+    def university(self):
+        print("Student")
+
+s = Student()
+l= Lecturer()
+d = Dean()
+d.university()
+l.university()
+s.university()
+
