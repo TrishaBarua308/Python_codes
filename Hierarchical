@@ -1,0 +1,21 @@
+# hierarchical
+class Vehicle:
+    def vehicle_fun(self):
+        print("Vehicle has an engine")
+
+class Car(Vehicle):
+    def car_fun(self):
+        print('Car has 4 doors\n')
+
+class Truck(Vehicle):
+    def truck_fun(self):
+        print("Truck can carry heavy material\n")
+
+
+print('\n')
+c = Car()
+c.vehicle_fun()
+c.car_fun()
+t=Truck()
+t.vehicle_fun()
+t.truck_fun()
