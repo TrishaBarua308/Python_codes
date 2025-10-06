@@ -1,0 +1,23 @@
+# Hybrid
+class Shape:
+    def area(self):
+        print("Calculating...")
+
+class Polygon(Shape):
+    def sides(self):
+        print("polygon has multiple sides.")
+
+class Rectangle(Polygon):
+    def __init__(self,length, breadth):
+        self.length = length
+        self.breadth = breadth
+
+    def area(self):
+        return self.length*self.breadth
+
+
+
+r = Rectangle(9,8)
+
+print(r.area())
+r.sides()
