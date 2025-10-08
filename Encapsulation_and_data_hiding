@@ -1,0 +1,19 @@
+class Dean:
+    def __init__(self):
+        self.name = 'Trisha'
+        self.__salary = 30000    # works as private
+        self._qualification = "BSc in CSE" # work as protected
+
+class Lecturer(Dean):
+    def __init__(self):
+        super().__init__()  # call parent constructor
+
+    def lec_fun(self):
+        print(f'Deans name = {self.name}')
+        print(f"Deans salary = {self._Dean__salary}") # private class cannot access directly, have to call by class name
+        print(f"Deans qualification = {self._qualification}") # protected variable can directly access by inherit class
+
+
+d = Dean()
+l = Lecturer()
+l.lec_fun()
