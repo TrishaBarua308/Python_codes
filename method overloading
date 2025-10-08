@@ -1,0 +1,10 @@
+# method overloading - python directly does not support method overloading
+
+class Shape:
+    def area(self, a, b=10):
+        return a*b
+
+
+s=Shape()
+print(s.area(15,20))  # 300
+print(s.area(15))  # 150
