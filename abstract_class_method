@@ -1,0 +1,39 @@
+from abc import ABC, abstractmethod
+
+class Bank(ABC):  # abstract class
+    def __init__(self):
+        self._balance = 10000
+
+    @abstractmethod     # it will create the immediate next function as abstract
+    def withdraw(self, amount):
+        self._balance -= amount
+
+    def check(self):
+        print(f"{self._balance}")
+
+
+class Save(Bank):
+    def withdraw(self, amount): # we have to inherit this abstract method
+        if self._balance < 10000:
+            print('withdraw failed')
+        else:
+            self._balance -= amount
+
+
+s = Save()
+s.withdraw(100)
+s.check()
+s.withdraw(100)
+s.check()
+
+
+
+
+
+
+
+
+
+
+
+
