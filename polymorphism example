@@ -1,0 +1,20 @@
+class Bankacc:
+    def __init__(self):
+        self._balance = 10000
+    def withdraw(self, amount):
+        self._balance -= amount
+    def check(self):
+        print(f"{self._balance}")
+        
+class savings(Bankacc):
+    def withdraw(self, amount):
+        if self._balance < 10000:
+            print("withdraw failed")
+        else:
+            self._balance -= amount
+
+s = savings()
+s.withdraw(100)
+s.check()
+s.withdraw(100)
+s.check()
