@@ -1,0 +1,25 @@
+import datetime
+now = datetime.datetime.now()
+print(now) # both date & time
+date = datetime.date.today()
+print(date) # only date
+time = datetime.datetime.now().time()
+print(time) # only time
+custom_d_t = datetime.datetime(2030,11,7, 7,5,10)
+print(custom_d_t)
+
+formate_date = now.strftime("%Y-%m-%d %H:%M:%S")
+print(formate_date)
+print("From here 7 lines")
+print(now.strftime("%y-%m-%d  %H:%M:%S")) # y = 2 digit year like 25
+print(now.strftime("%y-%m-%d  %I:%M:%S")) # I means = 12 hour system
+print(now.strftime("%y-%B-%d  %I:%M:%S")) # B = month in string, Full name
+print(now.strftime("%y-%b-%d  %I:%M:%S")) # b = month in string , short name
+print(now.strftime("%y-%b-%d  %A %I:%M:%S")) # A = day name, full
+print(now.strftime("%y-%b-%d  %a %I:%M:%S"))  # a = day name , short
+print(now.strftime("%y-%b-%d  %a %I:%M:%S %p")) # p = am or pm
+
+print("\nString to date")
+date_str = "07-11-2025 10:30:55"
+parse_date = datetime.datetime.strptime(date_str, "%d-%m-%Y %I:%M:%S")
+print(parse_date)
