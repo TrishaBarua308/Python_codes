@@ -1,0 +1,8 @@
+import pytz
+from datetime import datetime
+dhaka = pytz.timezone('Asia/dhaka')
+print(dhaka)
+utc_time = datetime.now(pytz.utc)
+print("UTC   = ",utc_time)
+dhaka_time = utc_time.astimezone(dhaka)
+print("Dhaka = ",dhaka_time)
