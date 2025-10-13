@@ -1,0 +1,28 @@
+# get
+# post
+# update
+# delete
+
+import requests
+# response =  requests.get("https://jsonplaceholder.typicode.com/posts")
+# print(response.status_code) # 200- correct
+# print(response.json())
+#
+# # post
+# data = {'userId': 1, 'id': 1, 'title': 'sunt aut facere repellat' }
+# post = requests.post("https://jsonplaceholder.typicode.com/posts",json=data)
+# print(post.json())
+# print(post.status_code) # 201 --created
+
+print('\n')
+#update
+# data = {'userId': 1, 'id': 1, 'title': 'updated' }
+# post = requests.put("https://jsonplaceholder.typicode.com/posts/1",json=data) # koto tomo id ta /id diye mention korte hbe like here /1
+# print(post.json())
+# print(post.status_code) # 200 -- correct
+
+# delete
+data = {'userId': 1, 'id': 1, 'title': 'deleted' }
+post = requests.delete("https://jsonplaceholder.typicode.com/posts/1")
+print(post.json())
+print(post.status_code) # 200 -- correct
