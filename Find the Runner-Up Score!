@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    n = int(input())
+    scores = list(map(int, input().split()))
+
+    # Remove duplicates
+    unique_scores = list(set(scores))
+
+    # Sort the list
+    unique_scores.sort()
+
+    # Print runner-up score
+    print(unique_scores[-2])
